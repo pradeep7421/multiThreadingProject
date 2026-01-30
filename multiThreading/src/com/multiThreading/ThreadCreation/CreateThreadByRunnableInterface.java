@@ -15,12 +15,12 @@ public class CreateThreadByRunnableInterface {
 		//case2
 		t1.run();  // no new thread is created and main thread calls run() method like normal method call
 		//case3
-		t2.start();	// A new thread is created and it internally calls run() method which is Runnable class implemetation which perform our task
+		t2.start();	// A new thread is created and it internally calls run() method which is MyRunnable class implemetation which perform our task
 		//case4
 		t2.run();   // no new thread is created and main thread calls Thread class run() method which internally calls runnable implemented run method like normal method call
 		//case5
 		//r.start(); //Compile time error as there is no start method in runnable interface
-		r.run(); // No new thread is created ,Runnable run method will be called just like normal method call by main thread
+		r.run(); // No new thread is created ,MyRunnable run method will be called just like normal method call by main thread
 	}
 
 }
