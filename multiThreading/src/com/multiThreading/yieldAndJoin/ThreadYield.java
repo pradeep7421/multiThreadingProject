@@ -9,7 +9,8 @@ public class ThreadYield {
 		t1.start();
 		for(int i = 1;i<=5;i++) {
 
-			System.out.println(i+"- Main thread run method current thread name - "+Thread.currentThread().getName());
+		System.out.println(i+"- Main thread run method current thread name - "+Thread.currentThread().getName());
+//		Thread.yield();
 		}
 	}
 
